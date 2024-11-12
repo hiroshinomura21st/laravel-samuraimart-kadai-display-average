@@ -22,7 +22,7 @@
                     <div class="col-12">
                         <p class="samuraimart-product-label mt-2">
                             {{ $recommend_product->name }}<br>
-                            <p class="samuraimart-star-rating" data-rate="{{ (@round($recommend_product->reviews->avg('score')) * 2) / 2 }}"></p><br><p>{{ (@round($recommend_product->reviews->avg('score')) * 2) / 2 }}, {{@round($recommend_product->reviews->avg('score'), 1) }}</p><br>
+                            <span class="samuraimart-star-rating" data-rate="{{ (@round($recommend_product->reviews->avg('score')) * 2) / 2 }}"></span><br><span>{{ (@round($recommend_product->reviews->avg('score')) * 2) / 2 }}, {{@round($recommend_product->reviews->avg('score'), 1) }}</span><br>
                             <label>￥{{ $recommend_product->price }}</label>
                         </p>
                     </div>
@@ -47,7 +47,7 @@
                         <div class="col-12">
                             <p class="samuraimart-product-label mt-2">
                                 {{ $recently_product->name }}<br>
-                                <div class="samuraimart-star-rating" data-rate="{{ (@round($recently_product->reviews->avg('score')) * 2) / 2 }}"></div><br><div>{{ @round($recently_product->reviews->avg('score'), 1) }}</div><br>
+                                <span class="samuraimart-star-rating" data-rate="{{ (@round($recently_product->reviews->avg('score')) * 2) / 2 }}"></span><br><span>{{ @round($recently_product->reviews->avg('score'), 1) }}</span><br>
                                 <label>￥{{ $recently_product->price }}</label>
                             </p>
                         </div>

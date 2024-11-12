@@ -36,7 +36,7 @@
                         <div class="col-12">
                             <p class="samuraimart-product-label mt-2">
                                 {{$product->name}}<br>
-                                <div class="samuraimart-star-rating" data-rate="{{ (@round($product->reviews->avg('score')) * 2) / 2 }}"></div><br><div>{{ @round($product->reviews->avg('score'), 1) }}</div><br>
+                                <span class="samuraimart-star-rating" data-rate="{{ (@round($product->reviews->avg('score')) * 2) / 2 }}"></span><br><span>{{ @round($product->reviews->avg('score'), 1) }}</span><br>
                                 <label>￥{{$product->price}}</label>
                             </p>
                         </div>
