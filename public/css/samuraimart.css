@@ -203,6 +203,4 @@ th, td {
     content: "★★★★★";
     color: #0fbe9f;
     z-index: 2;
-    width: 50%;
-    overflow: hidden;
 }
